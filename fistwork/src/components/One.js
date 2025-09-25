@@ -4,7 +4,8 @@ const One = () => {
   
   useEffect(() => {
     console.log("MOUNT ONE");
-
+    console.log("hello git checkup")
+    
   }, []);
 
   return (

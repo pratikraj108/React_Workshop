@@ -49,7 +49,7 @@ const StopWatch = () => {
 
   return (
     <div style={{ textAlign: "center", fontFamily: "monospace" }}>
-      <h1>⏱ Stopwatch</h1>
+      <h1> Stopwatch</h1>
       <h2>{formatTime(time)}</h2>
 
       <div style={{ margin: "10px" }}>

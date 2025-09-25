@@ -79,7 +79,7 @@ const TodoApp = () => {
       <Box
         sx={{
           display: "flex",
-          gap: 3,
+          gap: 4,
           flexWrap: "wrap",
           justifyContent: "center",
         }}
