@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const users = [
@@ -12,16 +13,21 @@ const Home = () => {
     },
   ];
 
+  const navigate = useNavigate(); 
+
   return (
     <div>
       <h1>Home Page</h1>
-      <Link to="/About">ABOUT</Link>
-      <br />
-      <Link to="/Contact">CONTACT</Link>
+      {/* <Link to="/About">ABOUT</Link> */}
+      <button onClick={() => navigate("/About")}>ABOUT</button>
+
+      {/* <Link to="/Contact">CONTACT</Link> */}
+      <button onClick={() => navigate("/Contact")}>CONTACT</button>
       
         {users.map((user) => (
           <li key={user.id}>
-            <Link to={`/user/${user.id}`}>View Profile {user.id}</Link>
+            {/* <Link to={`/user/${user.id}`}>View Profile {user.id}</Link> */}
+            <button onClick={() => navigate(`/user/${user.id}`)}>View Profile {user.id}</button>
           </li>
         ))}
 

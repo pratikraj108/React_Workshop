@@ -1,11 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <h1>Contact Page</h1>
-      <Link to="/">Home</Link>  
+      <button onClick={() => navigate("/")}>Home</button>
+      <button onClick={() => navigate("/About")}>ABOUT</button>
+
     </div>
   );
 };
